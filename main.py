@@ -29,7 +29,7 @@ def take_command():
             rate = engine.getProperty('rate')
             print(rate)
             engine.setProperty('rate', 185)
-            if 'rexx''wrecks' in command:
+            if 'rex' in command:
                 command = command.replace('rexx', '')
                 print(command)
                 return command
@@ -38,7 +38,7 @@ def take_command():
     return command
 
 
-def run_alexa():
+def run_rex():
     command = take_command()
     if not command:
         return
@@ -70,4 +70,4 @@ def run_alexa():
 
 
 while True:
-    run_alexa()
+    run_rex()
